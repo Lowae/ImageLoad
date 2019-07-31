@@ -7,10 +7,16 @@
     android:padding="5dp"
     tools:context="com.hao.imageload.MainActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_image"
+    <GridView
+        android:id="@+id/gv_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:background="@color/GhostWhite">
+    </GridView>
 
 </LinearLayout>
